@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+      .g-p{
+        padding: .75rem 1.25rem;
+      }
+      .g-border-b{
+        border-bottom: 1px solid rgba(0,0,0,.125);
+      }
+      .bi{
+        font-size: 20px;
+      }
+      .items{
+        position: relative;
+      }
+      .lists-all .items .add-item{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 0px;
+        background-color: #fff;
+      }
+      .item-group{
+        max-height: calc(100vh - (49px + 67px)); /*減去 上bar + 下bar*/
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container-fluid lists-all min-vh-100">
+      <div class="row">
+
+        <div class="lists card rounded-0 col-3 p-0 min-vh-100">
+          <div class="card-header list-group-title  d-flex justify-content-between align-items-center">
+            <div>Your lists</div>
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="g-p g-border-b add-list d-flex justify-content-between align-items-center">
+            <div>Create a new list</div>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="g-p item d-flex justify-content-between align-items-center">
+            <div>List name</div>
+            <div class="pr-1">0</div>
+          </div>
+        </div>
+
+
+        <div class="items card rounded-0 col-6 p-0 min-vh-100">
+          <div class="card-header list-group-title  d-flex justify-content-between align-items-center">
+            <div>List name</div>
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="item-group">
+            <div class="g-p item d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="edit">
+                  <i class="fas fa-pen"></i>
+                </div>
+                <div class="text pl-3">
+                  <div>new task</div>
+                  <small>this Tasks contains 0 note(s)</small>
+                </div>
+              </div>
+              <div class="check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="g-p item d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="edit">
+                  <i class="fas fa-pen"></i>
+                </div>
+                <div class="text pl-3">
+                  <div>new task</div>
+                  <small>this Tasks contains 0 note(s)</small>
+                </div>
+              </div>
+              <div class="check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <form class="g-p border-top add-item">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Add a new task">
+            </div>
+          </form>
+        </div>
+
+
+        <div class="option card rounded-0 col-3 p-0 min-vh-100">
+          <div class="card-header list-group-title d-flex justify-content-between align-items-center">
+            <div>Option</div>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+
+          <div class="g-p g-border-b option-group">
+            <div class=" d-flex justify-content-between align-items-center">
+              <div>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="mr-1 bi bi-filter-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <span>Sort by</span>
+              </div>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="g-p g-border-b option-group">
+            <div class=" d-flex justify-content-between align-items-center">
+              <div>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="mr-1 bi bi-filter" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <span>Filter by</span>
+              </div>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+            <div class="g-p">
+              <div class="pl-2 py-1">Remaining</div>
+              <div class="pl-2 py-1">Completed</div>
+              <div class="pl-2 py-1">All</div>
+            </div>
+          </div>
+
+          <div class="g-p g-border-b option-group" id="dropdownMenuButton" data-toggle="dropdown">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <i class="fas fa-clipboard-list px-1 mr-1"></i>
+                <span>List options</span>
+              </div>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
