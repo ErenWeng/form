@@ -1,16 +1,17 @@
 <template>
   <v-app>
-    <Login/>
+    <!-- <Login/> -->
+    <Signup/>
   </v-app>
 </template>
 
 <script>
-import Login from './components/Authentication/Login'
+import Signup from './components/Authentication/Signup'
 
 export default {
   name: 'App',
   components: {
-    Login
+    Signup
   }
 }
 </script>

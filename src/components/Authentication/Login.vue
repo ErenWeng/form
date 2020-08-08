@@ -12,13 +12,15 @@
             </v-toolbar>
             <v-card-text>
               <v-text-field
-                name="login"
-                label="Login"
+                prepend-icon="email"
+                name="email"
+                label="Email"
                 type="text"
               >
               </v-text-field>
 
               <v-text-field
+                prepend-icon="lock"
                 name="password"
                 label="Password"
                 type="password"
